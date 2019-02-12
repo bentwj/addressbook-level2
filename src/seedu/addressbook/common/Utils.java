@@ -37,4 +37,15 @@ public class Utils {
         }
         return true;
     }
+
+    /**
+     * Returns a new set of String keywords in all lowercase from a set of String keywords
+     */
+    public static Set<String> toLowerCaseKeywords(Set<String> keywords) {
+        Set<String> lowerCaseKeywords = new HashSet<>();
+        for (String keyword : keywords) {
+            lowerCaseKeywords.add(keyword.toLowerCase());
+        }
+        return lowerCaseKeywords;
+    }
 }
